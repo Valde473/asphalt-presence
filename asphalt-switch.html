@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Play Asphalt Legends: Unite</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/0/0d/NintendoSwitchLogo.svg" />
+
+  <!-- Open Graph for PreMiD -->
+  <meta property="og:title" content="Play Asphalt Legends: Unite">
+  <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/fr/thumb/d/d0/Asphalt_9_Legends_Logo.png/600px-Asphalt_9_Legends_Logo.png">
+
+  <style>
+    body {
+      background-color: #111;
+      color: white;
+      font-family: sans-serif;
+      text-align: center;
+      margin-top: 5em;
+    }
+    .logo {
+      width: 200px;
+    }
+    .subtitle {
+      font-size: 0.9em;
+      color: #ccc;
+      margin-top: 5px;
+    }
+    .timer {
+      font-size: 1em;
+      color: #0f0;
+      margin-top: 15px;
+    }
+    .switch-icon {
+      width: 40px;
+      vertical-align: middle;
+      margin-right: 8px;
+    }
+    h1 {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+    }
+  </style>
+</head>
+<body>
+  <img class="logo" src="https://upload.wikimedia.org/wikipedia/fr/thumb/d/d0/Asphalt_9_Legends_Logo.png/600px-Asphalt_9_Legends_Logo.png" alt="Asphalt 9 Logo" />
+  
+  <h1>
+    <img class="switch-icon" src="https://upload.wikimedia.org/wikipedia/commons/0/0d/NintendoSwitchLogo.svg" alt="Switch Icon">
+    Play Asphalt Legends: Unite
+  </h1>
+
+  <div class="subtitle">Sur Switch</div>
+
+  <div class="timer" id="timer">Temps de jeu : 00:00:00</div>
+
+  <script>
+    // Compteur de temps
+    let seconds = 0;
+    const timerEl = document.getElementById("timer");
+
+    function updateTimer() {
+      seconds++;
+      const hrs = String(Math.floor(seconds / 3600)).padStart(2, '0');
+      const mins = String(Math.floor((seconds % 3600) / 60)).padStart(2, '0');
+      const secs = String(seconds % 60).padStart(2, '0');
+      timerEl.textContent = `Temps de jeu : ${hrs}:${mins}:${secs}`;
+    }
+
+    setInterval(updateTimer, 1000);
+  </script>
+</body>
+</html>
