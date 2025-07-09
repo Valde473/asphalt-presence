@@ -1,8 +1,8 @@
 
 {
-  "name": "Asphalt Legends Switch Presence",
+  "name": "Asphalt Legends Presence",
   "id": "asphalt-legend-switch",
-  "author": "TonPseudo",
+  "author": "Valde473",
   "description": "Présence personnalisée pour Asphalt Legends Switch sur Discord",
   "version": "1.0.0",
   "files": ["presence/asphalt-switch.html", "presence/presence.js"],
