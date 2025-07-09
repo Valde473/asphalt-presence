@@ -1,12 +1,11 @@
+
 {
-  "name": "Asphalt Legends: Unite",
-  "description": "Affiche un statut Discord comme si tu jouais à Asphalt Legends: Unite sur Switch.",
-  "main": "presence/presence.js",
-  "type": "presence",
-  "website": "http://localhost/asphalt-switch.html",
-  "author": "TonNomIci",
-  "domain": "localhost",
-  "icon": "https://upload.wikimedia.org/wikipedia/fr/thumb/d/d0/Asphalt_9_Legends_Logo.png/600px-Asphalt_9_Legends_Logo.png",
-  "version": "1.0.0"
+  "name": "Asphalt Legends Switch Presence",
+  "id": "asphalt-legend-switch",
+  "author": "TonPseudo",
+  "description": "Présence personnalisée pour Asphalt Legends Switch sur Discord",
+  "version": "1.0.0",
+  "files": ["presence/asphalt-switch.html", "presence/presence.js"],
+  "main": "presence/presence.js"
 }
 
